@@ -20,7 +20,12 @@ public class DBTest {
         String password = "U61YX4R8TCresQKKjJvTpcot4dQubxdV";
 
 
-
+        //Github test
+        try{
+            //nothing
+        } catch (Exception e){
+            //Nothing
+        }
 
 
         try {

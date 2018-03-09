@@ -88,7 +88,8 @@ public class FXMLDocumentController implements Initializable
             ResultSet rs = st.executeQuery(query);
             while (rs.next())
             {
-                textOutput += " " + rs.getString(1) + " " + rs.getString(2) + " " + rs.getString(3) + "\n";
+                //Navngiver data i output
+                textOutput += " NAME: " + rs.getString(1) + ", NICKNAME: " + rs.getString(2) + ", TEAM: " + rs.getString(3) + "\n";
                 System.out.print(rs.getString(1) + " ");
                 System.out.print(rs.getString(2) + " ");
                 System.out.println(rs.getString(3));
@@ -134,7 +135,8 @@ public class FXMLDocumentController implements Initializable
             ResultSet rs = st.executeQuery(query);
             while (rs.next())
             {
-                textOutput += rs.getString(1) + " " + rs.getString(2) + "\n";
+                //Navngiver data i output
+                textOutput += "NAME: " + rs.getString(1) + ", TEAM: " + rs.getString(2) + "\n";
                 System.out.print(rs.getString(1) + " ");
 
             }
@@ -173,7 +175,8 @@ public class FXMLDocumentController implements Initializable
             ResultSet rs = st.executeQuery(query);
             while (rs.next())
             {
-                textOutput += rs.getString(1) + " " + rs.getString(2) + "\n";
+                //Navngiver data i output
+                textOutput += "TEAM: " + rs.getString(1) + ", COUNT: " + rs.getString(2) + "\n";
                 System.out.print(rs.getString(1) + " ");
 
             }
@@ -209,7 +212,8 @@ public class FXMLDocumentController implements Initializable
             ResultSet rs = st.executeQuery(query);
             while (rs.next())
             {
-                textOutput += rs.getString(1) + "\n";
+                //Navngiver data i output
+                textOutput += "TOURNAMENT: " +  rs.getString(1) + "\n";
                 System.out.print(rs.getString(1) + " ");
 
             }
@@ -244,7 +248,8 @@ public class FXMLDocumentController implements Initializable
             ResultSet rs = st.executeQuery(query);
             while (rs.next())
             {
-                textOutput += rs.getString(1) + " " + rs.getString(2) + " " + rs.getString(3) + "\n";
+                //Navngiver data i output
+                textOutput += "NAME: " + rs.getString(1) + ", NICKNAME: " + rs.getString(2) + ", TEAM: " + rs.getString(3) + "\n";
                 System.out.print(rs.getString(1) + " ");
                 System.out.print(rs.getString(2) + " ");
                 System.out.println(rs.getString(3));
@@ -289,7 +294,8 @@ public class FXMLDocumentController implements Initializable
             ResultSet rs = st.executeQuery(query);
             while (rs.next())
             {
-                textOutput += rs.getString(1) + " " + rs.getString(2) + "\n";
+                //Navngiver data i output
+                textOutput += "NAME: " + rs.getString(1) + ", TEAM: " + rs.getString(2) + "\n";
                 System.out.print(rs.getString(1) + " ");
 
             }
@@ -328,7 +334,7 @@ public class FXMLDocumentController implements Initializable
             ResultSet rs = st.executeQuery(query);
             while (rs.next())
             {
-                textOutput += rs.getString(1) + " " + rs.getString(2) + "\n";
+                textOutput += "TEAM: " + rs.getString(1) + ", COUNT: " + rs.getString(2) + "\n";
                 System.out.print(rs.getString(1) + " ");
 
             }
@@ -368,7 +374,7 @@ public class FXMLDocumentController implements Initializable
             ResultSet rs = st.executeQuery(query);
             while (rs.next())
             {
-                textOutput += rs.getString(1) + " " +rs.getString(2)+"\n";
+                textOutput += "TEAM: " + rs.getString(1) + ", COUNT: " +rs.getString(2)+"\n";
                 System.out.print(rs.getString(1) + " ");
 
             }

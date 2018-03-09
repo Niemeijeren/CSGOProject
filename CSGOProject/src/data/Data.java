@@ -62,7 +62,7 @@ public class Data implements IData
 
 
         } catch (Exception e) {
-            System.out.println(e);
+            System.out.println(e.getMessage()); // ændrede til at give besked. 
         }
         
         return data;
@@ -99,5 +99,21 @@ public class Data implements IData
         return data;    
     }
 
+
+    public ArrayList<String> getWinnerTeamInfo () {
+        try {
+            Statement st = db.createStatement(); 
+            
+            ResultSet rs = st.executeQuery(" Noget som tjekker noget of derefter viser tabellen med nødvendig data");
+            
+            
+        }
+        
+        
+        
+        
+     
+
+}
 
 }

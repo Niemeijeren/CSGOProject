@@ -89,10 +89,10 @@ public class Data implements IData
                                             + "WHERE Persons.role = 'coach'");
             while (rs.next()) {
                 int i = 1;
-                while (rs.getString(i) != null){
-                    System.out.print(rs.getString(1) + "\t" + rs.getString(2) + "\t" + rs.getString(3) + "\t" + rs.getString(4) + "\n");
+                while (rs.getString(i) != null){ // overvej om den skal være der. 
+                    System.out.print(rs.getString(1) + "\t" + rs.getString(2) + "\t" + rs.getString(3) + "\n"); // Skal kun have 3 svar ud.
                 }
-                // push test
+               
             }
             rs.close();
             st.close();

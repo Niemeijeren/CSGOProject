@@ -18,7 +18,7 @@ public class Data implements IData
     private String url = "jdbc:postgresql://horton.elephantsql.com:5432/sywigydc";
     private String username = "sywigydc";
     private String password = "U61YX4R8TCresQKKjJvTpcot4dQubxdV";
-    private ArrayList<String> data;
+    
     Connection db;
         
     
@@ -44,9 +44,11 @@ public class Data implements IData
     
     
     //Methode til at hente data fra database i StringArray
-    
+    @Override
  public ArrayList<String> getData(String query)
- {
+    {
+        ArrayList<String> data = new ArrayList<>();
+        
         try {
             Statement st = db.createStatement();
             ResultSet rs = st.executeQuery("SELECT * FROM Persons");
@@ -70,7 +72,11 @@ public class Data implements IData
     }
 
     @Override
-    public ArrayList<String> getCoachInfo() {
+    public ArrayList<String> getCoachInfo() 
+    {
+        
+        ArrayList<String> data = new ArrayList<>();
+        
             try {
                 Statement st = db.createStatement();
                 

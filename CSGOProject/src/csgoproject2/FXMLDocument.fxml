@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="569.0" prefWidth="706.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="csgoproject2.FXMLDocumentController">
+   <children>
+      <TextArea fx:id="output" layoutX="30.0" layoutY="313.0" pickOnBounds="false" prefHeight="223.0" prefWidth="647.0" />
+      <Button fx:id="allCoaches" layoutX="399.0" layoutY="62.0" mnemonicParsing="false" onAction="#listAllCoaches" prefHeight="39.0" prefWidth="272.0" text="List All Coaches" />
+      <Button fx:id="allWinningTeams" layoutX="399.0" layoutY="120.0" mnemonicParsing="false" onAction="#listAllWinningTeams" prefHeight="39.0" prefWidth="272.0" text="List All Wining Teams" />
+      <Button fx:id="listAllTeams" layoutX="399.0" layoutY="183.0" mnemonicParsing="false" onAction="#listAllTeams" prefHeight="39.0" prefWidth="272.0" text="List All Teams" />
+      <Button fx:id="listAllTournaments" layoutX="399.0" layoutY="246.0" mnemonicParsing="false" onAction="#listAllTournaments" prefHeight="39.0" prefWidth="272.0" text="List All Tournament" />
+      <Button fx:id="searchCoaches" layoutX="284.0" layoutY="62.0" mnemonicParsing="false" onAction="#searchCoaches" prefHeight="39.0" prefWidth="97.0" text="Search" />
+      <Button fx:id="searchAllWiningTeams" layoutX="284.0" layoutY="120.0" mnemonicParsing="false" onAction="#searchAllWiningTeams" prefHeight="39.0" prefWidth="97.0" text="Search" />
+      <Button fx:id="searchAllTeams" layoutX="284.0" layoutY="183.0" mnemonicParsing="false" onAction="#searchAllTeams" prefHeight="39.0" prefWidth="97.0" text="Search" />
+      <Button fx:id="searchAllTournaments" layoutX="284.0" layoutY="246.0" mnemonicParsing="false" onAction="#searchAllTournaments" prefHeight="39.0" prefWidth="97.0" text="Search" />
+      <TextField fx:id="textCoach" layoutX="30.0" layoutY="69.0" prefHeight="31.0" prefWidth="228.0" promptText="Enter Coach Name" />
+      <TextField fx:id="textWinningTeam" layoutX="30.0" layoutY="124.0" prefHeight="31.0" prefWidth="228.0" promptText="Enter Winning Team" />
+      <TextField fx:id="textAllTeam" layoutX="30.0" layoutY="187.0" prefHeight="31.0" prefWidth="228.0" promptText="Enter Team Name" />
+      <TextField fx:id="textTournament" layoutX="30.0" layoutY="246.0" prefHeight="31.0" prefWidth="228.0" promptText="Enter Number of Participating Teams" />
+   </children>
+</AnchorPane>
